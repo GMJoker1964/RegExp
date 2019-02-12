@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Month of Year</title>
+</head>
+<body>
+<script>
+    var str = parseInt(prompt("Nhap thang: "));
+
+    var patt1 = /[^0-11]/g;
+    //var patt2 ="January,February,March,April,May,June,July,August," +
+        //"September,October,November,December";
+    //var patt3 = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec";
+
+
+    var result1 = patt1.test(str);
+    //var result2 = patt2.test(str);
+
+
+    if (result1) {
+        document.write("Khong phai thang");
+    } else {
+        document.write("Is thang: " + str);
+    }
+
+</script>
+</body>
+</html>
